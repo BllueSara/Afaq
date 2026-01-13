@@ -1,0 +1,283 @@
+import { Language } from '@/domain/entities/Language';
+
+export const translations = {
+  [Language.AR]: {
+    nav: {
+      home: 'الرئيسية',
+      regions: 'المناطق',
+      planTrip: 'خطط لرحلتك',
+      stories: 'القصص',
+      interactiveExperiences: 'تجارب تفاعلية',
+      culturalGateway: 'بوابة الثقافة',
+    },
+    hero: {
+      title: 'اكتشف عراقة',
+      titleHighlight: 'التراث السعودي',
+      subtitle: 'استكشف المعالم الخلابة والثقافة المحلية العريقة للمملكة العربية السعودية.',
+      discover: 'اكتشف',
+    },
+    search: {
+      region: 'المنطقة',
+      experienceType: 'نوع التجربة',
+      selectRegion: 'اختر المنطقة',
+      selectExperience: 'اختر التجربة',
+    },
+    destinations: {
+      explore: 'استكشف منطقتك',
+      title: 'وجهات تراثية مختارة',
+      viewAll: 'عرض جميع الوجهات',
+      alBalad: {
+        title: 'حي البلد',
+        location: 'جدة، المملكة العربية السعودية',
+      },
+      alHijr: {
+        title: 'الحجر بالعلا',
+        location: 'المدينة المنورة، المملكة العربية السعودية',
+      },
+      rijalAlma: {
+        title: 'رجال ألمع',
+        location: 'منطقة أبها، المملكة العربية السعودية',
+      },
+      alTuraif: {
+        title: 'حي الطريف',
+        location: 'الدرعية، المملكة العربية السعودية',
+      },
+    },
+    storyOfTheDay: {
+      label: 'قصة اليوم',
+      title: 'فن "القط العسيري":',
+      titleLine2: 'حكاية ألوان من الجنوب',
+      description:
+        'اكتشف كيف حولت نساء عسير جدران منازلهن إلى لوحات فنية مذهلة، تقليد عريق تم تسجيله في قائمة اليونسكو للتراث الثقافي غير المادي.',
+      readStory: 'اقرأ القصة',
+      watchVideo: 'شاهد الفيديو',
+    },
+    regions: {
+      najd: 'نجد (الوسطى)',
+      hejaz: 'الحجاز (الغربية)',
+      asir: 'عسير (الجنوبية)',
+      eastern: 'المنطقة الشرقية',
+      north: 'الشمال',
+    },
+    experienceTypes: {
+      historicalSites: 'مواقع تاريخية',
+      culinaryArts: 'فنون الطهي',
+      traditionalCrafts: 'حرف تقليدية',
+      localFestivals: 'مهرجانات محلية',
+    },
+    alt: {
+      diriyah: 'الدرعية التاريخية',
+      crafts: 'الحرف اليدوية التقليدية',
+      qattAlAsiri: 'أنماط جدارية هندسية ملونة تقليدية لفن القط العسيري',
+    },
+    story: {
+      title: 'القط العسيري',
+      subtitle: 'لغة الألوان الصامتة التي زيّنت جدران الجنوب وحفظت هوية المكان.',
+      unescoBadge: 'تراث عالمي (اليونسكو)',
+      intro: 'في أعالي جبال عسير، حيث يعانق السحاب قمم السروات، ولدت لغة بصرية فريدة لم تكتب بالحروف، بل رُسمت بالألوان والأشكال الهندسية. "القط العسيري" ليس مجرد زخرفة جدارية، بل هو سجل اجتماعي وثقافي أبدعته نساء المنطقة ليحكي قصص الضيافة والجمال والهوية.',
+      historicalRoots: {
+        title: 'الجذور التاريخية',
+        p1: 'يعود تاريخ هذا الفن العريق إلى مئات السنين، حيث كانت المرأة العسيرية تتولى مسؤولية تزيين جدران المجلس الداخلي للبيت، المعروف باسم "المجلس" أو "القط". كانت هذه الغرفة هي واجهة البيت ومكان استقبال الضيوف، لذا كان الاهتمام بتفاصيلها يعكس مكانة العائلة وكرم ضيافتها.',
+        p2: 'اعتمدت الفنانات القدامى على مواد طبيعية محلية لاستخلاص الألوان؛ فالأسود من الفحم، والأحمر من حجر "المشق"، والأصفر من الكركم وقشور الرمان، والأزرق من مسحوق النيلة. هذه العلاقة العضوية بين الفن والأرض منحت القط العسيري روحه الخالدة.',
+      },
+      creativeJourney: {
+        title: 'رحلة الإبداع',
+        planning: { title: 'التخطيط الهندسي', desc: 'بداية كل لوحة' },
+        colorMixing: { title: 'مزج الألوان' },
+        finishing: { title: 'اللمسات الأخيرة' },
+        note: '* اضغط على الصور لاستكشاف تفاصيل العملية الفنية',
+      },
+      documentary: {
+        badge: 'وثائقي حصري',
+        title: 'أسرار "البناة"',
+        description: 'رحلة بصرية تأخذكم إلى قرية "رجال ألمع" لمقابلة آخر حافظات هذا التراث.',
+        duration: '12:45',
+      },
+      guardian: {
+        title: 'حراس الثقافة',
+        name: 'فاطمة الألمعي',
+        role: 'فنانة قط عسيري، ٦٥ عاماً',
+        quote: '"تعلمت النقش من جدتي وأنا في السابعة. كل مثلث وكل خط يحكي قصة حب لأرضنا."',
+        region: 'عسير، رجال ألمع',
+        regionLabel: 'المنطقة',
+        experience: '٥٠+ عام',
+        experienceLabel: 'سنوات الخبرة',
+        specialty: 'النقش التقليدي',
+        specialtyLabel: 'التخصص',
+        bookWorkshop: 'حجز ورشة خاصة',
+      },
+      didYouKnow: {
+        title: 'هل تعلم؟',
+        fact1: 'أُدرج القط العسيري في قائمة اليونسكو للتراث غير المادي عام 2017.',
+        fact2: 'الأشكال الهندسية في القط ترمز لعناصر الطبيعة: الجبال، النباتات، والمحاصيل.',
+      },
+      experiences: {
+        title: 'عِش التجربة بنفسك',
+        subtitle: 'ورش عمل وجولات مختارة في المنطقة الجنوبية',
+        viewAll: 'عرض جميع الورش',
+        workshop1: {
+          title: 'مبادئ القط العسيري',
+          description: 'تعلم أساسيات رسم المثلثات والخطوط واستخدام الألوان الطبيعية في ورشة عمل ليوم واحد.',
+          price: '٢٥٠ ر.س',
+          location: 'أبها، قرية المفتاحة',
+          date: 'السبت القادم',
+        },
+        workshop2: {
+          title: 'جولة "بيوت الألوان"',
+          description: 'رحلة ميدانية لزيارة أقدم المنازل المزينة بالقط ومقابلة الجدات الفنانات في منازلهن.',
+          price: '١٢٠٠ ر.س',
+          location: 'رجال ألمع',
+          duration: '٣ أيام',
+        },
+        workshop3: {
+          title: 'صناعة الألوان الطبيعية',
+          description: 'كيف نحول الحجارة والنباتات إلى ألوان زاهية؟ ورشة تعليمية ممتعة للأطفال والكبار.',
+          price: '١٥٠ ر.س',
+          location: 'سوق الثلاثاء',
+          type: 'عائلي',
+        },
+      },
+    },
+  },
+  [Language.EN]: {
+    nav: {
+      home: 'Home',
+      regions: 'Regions',
+      planTrip: 'Plan Your Trip',
+      stories: 'Stories',
+      interactiveExperiences: 'Interactive Experiences',
+      culturalGateway: 'Cultural Gateway',
+    },
+    hero: {
+      title: 'Discover the Richness of',
+      titleHighlight: 'Saudi Heritage',
+      subtitle: 'Explore the stunning landmarks and authentic local culture of the Kingdom of Saudi Arabia.',
+      discover: 'Discover',
+    },
+    search: {
+      region: 'Region',
+      experienceType: 'Experience Type',
+      selectRegion: 'Select Region',
+      selectExperience: 'Select Experience',
+    },
+    destinations: {
+      explore: 'Explore Your Region',
+      title: 'Featured Heritage Destinations',
+      viewAll: 'View All Destinations',
+      alBalad: {
+        title: 'Al-Balad District',
+        location: 'Jeddah, Kingdom of Saudi Arabia',
+      },
+      alHijr: {
+        title: 'Al-Hijr in Al-Ula',
+        location: 'Medina, Kingdom of Saudi Arabia',
+      },
+      rijalAlma: {
+        title: 'Rijal Alma',
+        location: 'Abha Region, Kingdom of Saudi Arabia',
+      },
+      alTuraif: {
+        title: 'Al-Turaif District',
+        location: 'Diriyah, Kingdom of Saudi Arabia',
+      },
+    },
+    storyOfTheDay: {
+      label: 'Story of the Day',
+      title: 'Al-Qatt Al-Asiri Art:',
+      titleLine2: 'A Tale of Colors from the South',
+      description:
+        'Discover how the women of Asir transformed their home walls into stunning artistic canvases, an ancient tradition registered on UNESCO\'s Intangible Cultural Heritage list.',
+      readStory: 'Read the Story',
+      watchVideo: 'Watch the Video',
+    },
+    regions: {
+      najd: 'Najd (Central)',
+      hejaz: 'Hejaz (Western)',
+      asir: 'Asir (Southern)',
+      eastern: 'Eastern Region',
+      north: 'North',
+    },
+    experienceTypes: {
+      historicalSites: 'Historical Sites',
+      culinaryArts: 'Culinary Arts',
+      traditionalCrafts: 'Traditional Crafts',
+      localFestivals: 'Local Festivals',
+    },
+    alt: {
+      diriyah: 'Historic Diriyah',
+      crafts: 'Traditional Handicrafts',
+      qattAlAsiri: 'Traditional colorful geometric wall art patterns of Al-Qatt Al-Asiri',
+    },
+    story: {
+      title: 'Al-Qatt Al-Asiri',
+      subtitle: 'The silent language of colors that adorned the walls of the South and preserved the identity of the place.',
+      unescoBadge: 'World Heritage (UNESCO)',
+      intro: 'In the high mountains of Asir, where clouds embrace the peaks of Sarawat, a unique visual language was born—not written in letters, but painted in colors and geometric shapes. "Al-Qatt Al-Asiri" is not just a wall decoration, but a social and cultural record created by the women of the region to tell stories of hospitality, beauty, and identity.',
+      historicalRoots: {
+        title: 'Historical Roots',
+        p1: 'The history of this ancient art dates back hundreds of years, when Asiri women were responsible for decorating the walls of the inner reception room of the house, known as "Al-Majlis" or "Al-Qatt". This room was the face of the house and the place for receiving guests, so attention to its details reflected the family\'s status and hospitality.',
+        p2: 'Ancient artists relied on local natural materials to extract colors; black from charcoal, red from "Al-Mashq" stone, yellow from turmeric and pomegranate peels, and blue from indigo powder. This organic relationship between art and land gave Al-Qatt Al-Asiri its eternal spirit.',
+      },
+      creativeJourney: {
+        title: 'Creative Journey',
+        planning: { title: 'Geometric Planning', desc: 'The beginning of every painting' },
+        colorMixing: { title: 'Color Mixing' },
+        finishing: { title: 'Finishing Touches' },
+        note: '* Click on images to explore details of the artistic process',
+      },
+      documentary: {
+        badge: 'Exclusive Documentary',
+        title: 'Secrets of "The Builders"',
+        description: 'A visual journey taking you to "Rijal Alma" village to meet the last guardians of this heritage.',
+        duration: '12:45',
+      },
+      guardian: {
+        title: 'Culture Guardians',
+        name: 'Fatima Al-Almi',
+        role: 'Al-Qatt Al-Asiri Artist, 65 years old',
+        quote: '"I learned engraving from my grandmother when I was seven. Every triangle and every line tells a story of love for our land."',
+        region: 'Asir, Rijal Alma',
+        regionLabel: 'Region',
+        experience: '50+ years',
+        experienceLabel: 'Years of Experience',
+        specialty: 'Traditional Engraving',
+        specialtyLabel: 'Specialty',
+        bookWorkshop: 'Book Private Workshop',
+      },
+      didYouKnow: {
+        title: 'Did You Know?',
+        fact1: 'Al-Qatt Al-Asiri was inscribed on UNESCO\'s Intangible Cultural Heritage list in 2017.',
+        fact2: 'The geometric shapes in Al-Qatt symbolize elements of nature: mountains, plants, and crops.',
+      },
+      experiences: {
+        title: 'Experience It Yourself',
+        subtitle: 'Selected workshops and tours in the Southern Region',
+        viewAll: 'View All Workshops',
+        workshop1: {
+          title: 'Al-Qatt Al-Asiri Basics',
+          description: 'Learn the fundamentals of drawing triangles and lines and using natural colors in a one-day workshop.',
+          price: '250 SAR',
+          location: 'Abha, Al-Muftaha Village',
+          date: 'Next Saturday',
+        },
+        workshop2: {
+          title: '"Colorful Houses" Tour',
+          description: 'A field trip to visit the oldest houses decorated with Al-Qatt and meet the grandmother artists in their homes.',
+          price: '1,200 SAR',
+          location: 'Rijal Alma',
+          duration: '3 days',
+        },
+        workshop3: {
+          title: 'Natural Color Making',
+          description: 'How do we turn stones and plants into vibrant colors? An educational workshop for children and adults.',
+          price: '150 SAR',
+          location: 'Tuesday Market',
+          type: 'Family',
+        },
+      },
+    },
+  },
+};
+
+export type TranslationKey = keyof typeof translations[Language.AR];
+
