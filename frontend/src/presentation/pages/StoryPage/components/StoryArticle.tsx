@@ -24,13 +24,13 @@ const documentaryImageUrl =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuC67icp_TXHhHEYwZh18M7lKOLSATyCttwFA0908UWcFBU5wfOXGCDkDwhnPBMQ4Sg5V2fI_5ktQnRHeVrRgSSzCSrFuu_Yx-zaCYSXIraceG8tBS4fLVbclBVn3GpMXsTc8dYajs2tWiTeSgsbcV64RwN_tYSxwC2SVjUDjd0fOkAuTcIE-pVsFYudufDwTGtm3oQNMzoqDLW-eZjjHOZY5KJ5v72nxtAzBOWde_YQ51keylpcbAcuRRanfhramMDE68fIPHMY6Q';
 
 export const StoryArticle = () => {
-  const { language, isRTL } = useLanguage();
+  const { language } = useLanguage();
   const t = useTranslation(language);
 
   return (
     <article className="lg:col-span-8 order-2 lg:order-1">
       <div className="mb-12">
-        <p className="drop-cap text-xl md:text-2xl leading-relaxed text-gray-700 dark:text-gray-300 font-light text-justify pl-4">
+        <p className="text-xl md:text-2xl leading-relaxed text-gray-700 dark:text-gray-300 font-light text-justify pl-4">
           {t.story.intro}
         </p>
       </div>
@@ -102,7 +102,7 @@ export const StoryArticle = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-20 h-20 md:w-24 md:h-24 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)]">
-            <Icon name="play_arrow" size="5xl" className="text-white pl-1" />
+            <Icon name="play_arrow" size="4xl" className="text-white pl-1" />
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
