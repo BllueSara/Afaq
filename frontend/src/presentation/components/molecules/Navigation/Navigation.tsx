@@ -11,7 +11,7 @@ export const Navigation = () => {
   const navItems = [
     { label: t.nav.home, href: '/' },
     { label: t.nav.regions, href: '/regions' },
-    { label: t.nav.planTrip, href: '/plan-trip' },
+    { label: t.nav.planTrip, href: '/planner' },
   ];
 
   return (

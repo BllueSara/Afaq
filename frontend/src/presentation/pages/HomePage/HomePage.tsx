@@ -106,6 +106,7 @@ export const HomePage = () => {
               <p className="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto">
                 {t.hero.subtitle}
               </p>
+
             </div>
             <SearchForm onSubmit={handleSearch} />
           </div>

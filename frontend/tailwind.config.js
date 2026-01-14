@@ -16,19 +16,21 @@ export default {
         "accent-gold": "#C5A059",
         "accent-sand": "#e6e3db",
         "background-beige": "#F5F5DC",
+        "beige-custom": "#F5F5DC",
         "background-light": "#f8f8f5",
-        "background-dark": "#221e10",
+        "background-dark": "#161d15",
         "surface": "#ffffff",
         "text-main": "#181611",
-        "text-dark": "#181611",
+        "text-dark": "#131613",
         "text-light": "#f5f3f0",
+        "text-muted": "#6e7f6c",
         "muted": "#8a8060"
       },
       fontFamily: {
         "arabic": ["Readex Pro", "sans-serif"],
-        "display": ["Cairo", "serif"],
-        "body": ["IBM Plex Sans Arabic", "sans-serif"],
-        "sans": ["IBM Plex Sans Arabic", "sans-serif"]
+        "display": ["IBM Plex Sans Arabic", "Plus Jakarta Sans", "sans-serif"],
+        "body": ["IBM Plex Sans Arabic", "Plus Jakarta Sans", "sans-serif"],
+        "sans": ["IBM Plex Sans Arabic", "Plus Jakarta Sans", "sans-serif"]
       },
       borderRadius: {
         "DEFAULT": "0.25rem",

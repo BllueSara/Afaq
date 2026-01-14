@@ -150,6 +150,67 @@ export const translations = {
       mapSubtitle: 'وادي حنيفة، الرياض',
       getDirections: 'احصل على الاتجاهات',
     },
+    planner: {
+      title: 'خطّط يومك مع المرشد الذكي',
+      subtitle: 'أجب على بعض الأسئلة لنصمم لك جولة ثقافية لا تُنسى في المملكة',
+      cta: 'أنشئ خطتي لليوم',
+      generating: 'جارِ إعداد الخطّة...',
+      location: {
+        title: 'أين تريد أن تبدأ جولتك؟',
+        placeholder: 'اختر المدينة (الرياض، جدة، العلا...)',
+        cities: {
+          riyadh: 'الرياض',
+          jeddah: 'جدة',
+          alula: 'العلا',
+          dammam: 'الدمام',
+          abha: 'أبها',
+        }
+      },
+      duration: {
+        title: 'كم مدة وقتك المتاح؟',
+        options: {
+          twoHours: 'ساعتين',
+          halfDay: 'نصف يوم',
+          fullDay: 'يوم كامل',
+        }
+      },
+      companions: {
+        title: 'مع من الرحلة؟',
+        options: {
+          solo: 'بمفردي',
+          couple: 'زوجين',
+          friends: 'الأصدقاء',
+          family: 'العائلة',
+        }
+      },
+      interests: {
+        title: 'نوع التجربة',
+        subtitle: '(يمكنك اختيار أكثر من واحدة)',
+        options: {
+          heritage: { label: 'تراث وتاريخ', subLabel: 'اكتشف الماضي العريق' },
+          nature: { label: 'طبيعة ومغامرة', subLabel: 'جمال الصحراء والجبال' },
+          shopping: { label: 'تسوق وعصرية', subLabel: 'أحدث الوجهات العصرية' },
+          food: { label: 'مأكولات شعبية', subLabel: 'تذوق النكهات الأصيلة' },
+        }
+      },
+      activity: {
+        title: 'مستوى النشاط',
+        relaxed: 'هادئ ومسترخي',
+        active: 'نشيط ومغامر',
+      }
+    },
+    itinerary: {
+      header: 'مساري المقترح',
+      back: 'العودة',
+      detailsTitle: 'تفاصيل الرحلة الذكية',
+      stopsLabel: 'محطات',
+      summary: {
+        distance: 'المسافة الإجمالية',
+        time: 'الوقت المتوقع',
+        save: 'حفظ المسار',
+        start: 'بدء الملاحة'
+      }
+    },
   },
   [Language.EN]: {
     nav: {
@@ -300,8 +361,68 @@ export const translations = {
       mapSubtitle: 'Wadi Hanifa, Riyadh',
       getDirections: 'Get directions',
     },
+    planner: {
+      title: 'Plan Your Day with the Smart Guide',
+      subtitle: 'Answer a few questions and we’ll design an unforgettable cultural journey for you in the Kingdom.',
+      cta: 'Generate My Plan for Today',
+      generating: 'Generating Plan...',
+      location: {
+        title: 'Where do you want to start?',
+        placeholder: 'Choose a city (Riyadh, Jeddah, AlUla...)',
+        cities: {
+          riyadh: 'Riyadh',
+          jeddah: 'Jeddah',
+          alula: 'AlUla',
+          dammam: 'Dammam',
+          abha: 'Abha',
+        }
+      },
+      duration: {
+        title: 'How much time?',
+        options: {
+          twoHours: '2 Hours',
+          halfDay: 'Half Day',
+          fullDay: 'Full Day',
+        }
+      },
+      companions: {
+        title: 'Who is the trip with?',
+        options: {
+          solo: 'Solo',
+          couple: 'Couple',
+          friends: 'Friends',
+          family: 'Family',
+        }
+      },
+      interests: {
+        title: 'Experience Type',
+        subtitle: '(You can choose more than one)',
+        options: {
+          heritage: { label: 'Heritage & History', subLabel: 'Discover the ancient past' },
+          nature: { label: 'Nature & Adventure', subLabel: 'Beauty of deserts and mountains' },
+          shopping: { label: 'Shopping & Modernity', subLabel: 'Latest modern destinations' },
+          food: { label: 'Traditional Food', subLabel: 'Taste authentic flavors' },
+        }
+      },
+      activity: {
+        title: 'Activity Level',
+        relaxed: 'Relaxed & Chill',
+        active: 'Active & Adventurous',
+      }
+    },
+    itinerary: {
+      header: 'My Proposed Itinerary',
+      back: 'Back',
+      detailsTitle: 'Smart Journey Details',
+      stopsLabel: 'Stops',
+      summary: {
+        distance: 'Total Distance',
+        time: 'Estimated Time',
+        save: 'Save Route',
+        start: 'Start Navigation'
+      }
+    },
   },
 };
 
 export type TranslationKey = keyof typeof translations[Language.AR];
-
