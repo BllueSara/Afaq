@@ -48,6 +48,9 @@ npm run preview
 
 ### الطريقة الأولى: عبر Netlify CLI
 ```bash
+# الانتقال إلى مجلد frontend
+cd frontend
+
 # تثبيت Netlify CLI
 npm install -g netlify-cli
 
@@ -63,12 +66,21 @@ netlify deploy --prod
 2. اذهب إلى [Netlify](https://www.netlify.com)
 3. اضغط على "Add new site" > "Import an existing project"
 4. اختر GitHub واختر المستودع
-5. Netlify سيكتشف الإعدادات تلقائياً من ملف `netlify.toml`
+5. **مهم جداً**: في إعدادات البناء (Build settings):
+   - **Base directory**: `frontend`
+   - **Build command**: `npm run build` (سيتم اكتشافه تلقائياً من `netlify.toml`)
+   - **Publish directory**: `frontend/dist` (سيتم اكتشافه تلقائياً من `netlify.toml`)
+6. اضغط "Deploy site"
 
 ### الطريقة الثالثة: السحب والإفلات
-1. قم ببناء المشروع: `npm run build`
-2. اذهب إلى [Netlify](https://www.netlify.com)
-3. اسحب مجلد `dist` إلى Netlify
+1. انتقل إلى مجلد `frontend`: `cd frontend`
+2. قم ببناء المشروع: `npm run build`
+3. اذهب إلى [Netlify](https://www.netlify.com)
+4. اسحب مجلد `dist` إلى Netlify
+
+### ملاحظات مهمة:
+- إذا كان المشروع يحتوي على مجلدات `frontend` و `backend`، تأكد من تعيين **Base directory** كـ `frontend` في إعدادات Netlify
+- ملف `netlify.toml` موجود في مجلد `frontend` وسيتم اكتشافه تلقائياً عند تعيين Base directory
 
 ## التقنيات المستخدمة
 

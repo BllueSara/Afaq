@@ -1,7 +1,13 @@
+# إعدادات Netlify
+# ملاحظة: إذا كان المشروع يحتوي على مجلدات frontend و backend
+# تأكد من تعيين Base directory كـ "frontend" في إعدادات Netlify
+
 [build]
   command = "npm run build"
   publish = "dist"
 
+# إعادة توجيه جميع المسارات إلى index.html لدعم React Router (SPA)
+# ملاحظة: ملف _redirects في مجلد public سيتم نسخه تلقائياً إلى dist
 [[redirects]]
   from = "/*"
   to = "/index.html"
