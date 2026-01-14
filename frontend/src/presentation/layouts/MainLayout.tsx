@@ -11,7 +11,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
 
     return (
         <div
-            className={`bg-beige-custom min-h-screen flex flex-col font-body ${!isRTL ? "font-['Plus_Jakarta_Sans']" : ""}`}
+            className={`bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-arabic ${!isRTL ? "font-['Plus_Jakarta_Sans']" : ""}`}
             dir={isRTL ? "rtl" : "ltr"}
         >
             {/* Navbar */}

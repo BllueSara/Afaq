@@ -4,12 +4,14 @@ import { twMerge } from 'tailwind-merge';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+    size?: 'sm' | 'md' | 'lg';
     fullWidth?: boolean;
     children: ReactNode;
 }
 
 export const Button = ({
     variant = 'primary',
+    size = 'md',
     fullWidth = false,
     className,
     children,
@@ -24,15 +26,18 @@ export const Button = ({
         ghost: 'bg-transparent text-text-dark hover:bg-black/5',
     };
 
-    const sizes = 'h-10 px-4 text-sm';
-    const lgSizes = 'py-4 px-8 text-lg rounded-xl'; // Special case for big CTA
+    const sizeStyles = {
+        sm: 'h-9 px-4 text-xs',
+        md: 'h-10 px-4 text-sm',
+        lg: 'py-4 px-8 text-lg rounded-xl',
+    };
 
     return (
         <button
             className={twMerge(
                 baseStyles,
                 variants[variant],
-                sizes,
+                sizeStyles[size],
                 fullWidth && 'w-full',
                 className
             )}

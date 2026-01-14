@@ -8,6 +8,10 @@ import { useLanguage } from '@/application/hooks/useLanguage';
 import { useTranslation } from '@/application/hooks/useTranslation';
 import { DestinationMapper } from '@/infrastructure/mappers/DestinationMapper';
 import { useMemo } from 'react';
+import dareahImage from '@/assets/dareah.jpeg';
+import ulaImage from '@/assets/ula.jpeg';
+import albaladImage from '@/assets/albalad.jpeg';
+import rjalalmaImage from '@/assets/rjalalma3.jpeg';
 
 const heroImageUrl =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuCsW_khh3ISZK_5EJOiWXasOLPE9NQ1r5DiXwV6IPOi-G3NUIL-WeDfNFOoODJLew91BkZAepCS9vTmX2BzOuo56Sra3njpWVQ81cqR_FUvgoHN_JvomsCmin2ljQyYfso6jM2a53l6-9AffJNk06jOR96krRdHAi0nBXZfiyzXI3i8hsUDpuJmk6o9Mqz1bybMYG5XSKWd0xD7iAZrRUP5g36J98UJZYx_g-tbBjOuveuZRpyptArxl1Bo18D3APM_ccfeGuh74bdP';
@@ -18,32 +22,28 @@ const baseDestinations: Destination[] = [
     title: 'حي الطريف',
     region: Region.NAJD,
     location: 'الدرعية، الرياض',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBloIl_IQ7bYzpEK4RqJX681tNGpcgedo8FIB2oqXdMFhaK2TKZgN0WRSLjs4R9iOgI1QmIVPNqzULe56fie7M1Ylr82RA3SDtF1tuRtmRg7M7QoKpneZzvRHDg6YLju8TwRGhBMdD-HsuX-c3aLLMGx6zC3MbxiQbDN3nB8wyNbJWpxHpZGehIQKS2_H90JQfTd-eFcXNeaSgdyPRkIPymISJr3SYmR5JJmsu4TvAjZOOlDAKrhN_n1FZOIW4HziBGjO5N2kd-7dE7',
+    imageUrl: dareahImage,
   },
   {
     id: '2',
     title: 'مدائن صالح (الحجر)',
     region: Region.HEJAZ,
     location: 'العلا، منطقة المدينة المنورة',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKfpiNK8G8H7eCJPkbiZgnFCoSLqVP8RWeOox1DSA6s0PagUz4LDuy_oNUT6AZACSKtrNH-EFVlDSO7N-qV2xEat1egytlmoOgtREWyPzEyqJQgu6g6REFv61vmX-_swvrQ7MXyQPXmULj7TQQN47j8eNCei4cH_eaTg5kaKt5BKoGEZchFjvR7WbA-eQTSOFYQIqy2eX6G2uwkmE6pEX9m2axPaRoS_juoJjURzV-bLWRGpDJURndCIGmwd1LMzCYfzlb_VIFem5T',
+    imageUrl: ulaImage,
   },
   {
     id: '3',
     title: 'حي البلد',
     region: Region.HEJAZ,
     location: 'حي البلد، جدة',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAdol0C8CK5CfTx74mm_QxsBimozKlBVAHpEkx0l1be5jG4Flr7YHvBqhoWjuQrTm3OvpTUthEiadAGtn24AXMDZZ-Nx9SifXb8KVUfWBDR-RxBogmREFn1awJZjL4O3l3oM1HWu8whC1u8bCGOQnp8aW6nVuJH85bqU5GHRd9C1cCd8DeVmvg7te0w964D8AWFSxSRqhuQ2HopJpT7vfFfh3acvqAU1ojZu3CT4JSwWr2-n1rLtwD1yHx1ozp_BqYjP-QazMXWw6D7',
+    imageUrl: albaladImage,
   },
   {
-    id: '4',
-    title: '',
-    region: Region.NAJD,
-    location: '',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDNfKVgd20l1Ba45YMvltS_nfJMvQvcbov8WtAZZBggot4pzMAQtARjEyrkbXXWc6JV3_VT7xbxmfh5DNNZb0fTchCf2ciqP-EPg3KtZeZN3He7qzqySEWNsLiW2x2DTAQoaGeDzUfoeSxcmiATdrFcq1vO_T0eAYVd0B2CYZnoJ8dPS2E266JKlIJngtlVqRuZ0ugx67D5-DgCCa58eJQ5g35RwmsJve3-QVdx5Zyne9eJsSuHvOdmKEh2PFQdoz6INrJX-L6lO_ZX',
+    id: 'rijal-alma',
+    title: 'قرية رجال ألمع',
+    region: Region.ASIR,
+    location: 'رجال ألمع، عسير',
+    imageUrl: rjalalmaImage,
   },
 ];
 

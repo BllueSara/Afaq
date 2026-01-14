@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { Navigation } from '@/presentation/components/molecules/Navigation';
 import { StoryHero } from './components/StoryHeader';
 import { StoryArticle } from './components/StoryArticle';
 import { StorySidebar } from './components/StorySidebar';
 
 export const StoryPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-background-light dark:bg-background-dark text-[#121811] dark:text-[#f9fbf9] min-h-screen font-arabic">
       <Navigation />

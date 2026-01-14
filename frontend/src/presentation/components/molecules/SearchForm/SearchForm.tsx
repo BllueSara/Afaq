@@ -16,7 +16,7 @@ interface SearchFormProps {
 export const SearchForm = ({ onSubmit }: SearchFormProps) => {
   const { language, isRTL } = useLanguage();
   const t = useTranslation(language);
-  const [region, setRegion] = useState<string>('');
+  const [region, setRegion] = useState<string>(Region.NAJD);
   const [experienceType, setExperienceType] = useState<string>('');
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

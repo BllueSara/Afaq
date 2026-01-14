@@ -1,6 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 import { Icon } from '@/presentation/components/atoms/Icon';
 import { useLanguage } from '@/application/hooks/useLanguage';
+import salehcityImage from '@/assets/salehcity.jpeg';
+import sixflagImage from '@/assets/sixflag.jpeg';
+import jeddahImage from '@/assets/jeddah.jpeg';
+import frasanImage from '@/assets/frasan.jpeg';
+import jazerahredseaImage from '@/assets/jazerahredsea.jpeg';
+import dareahImage from '@/assets/dareah.jpeg';
+import albaladImage from '@/assets/albalad.jpeg';
+import rjalalmaImage from '@/assets/rjalalma3.jpeg';
+import hailImage from '@/assets/7ail.jpg';
+import alahsaImage from '@/assets/Al-Ahsa_Palm_Oasis_2023.jpg';
+import kabsahImage from '@/assets/kabsah.jpeg';
+import slegImage from '@/assets/sleg.jpeg';
+import hanethImage from '@/assets/haneth.jpeg';
+import fishImage from '@/assets/fish.jpeg';
 
 interface DestinationGridProps {
   activeTab: 'heritage' | 'modern';
@@ -31,24 +45,6 @@ type DestinationItem = {
 
 const destinations: DestinationItem[] = [
   {
-    id: '2',
-    title: 'مدائن صالح (الحجر)',
-    titleEn: 'Hegra (Al-Hijr)',
-    description:
-      'رحلة عبر الزمن إلى قلب الحضارة النبطية، حيث تحكي الصخور المنحوتة قصص ألفي عام من التاريخ في العلا.',
-    descriptionEn:
-      'A journey through time into the heart of the Nabataean civilization, where carved rocks tell stories of two thousand years of history in AlUla.',
-    location: 'العلا، منطقة المدينة المنورة',
-    locationEn: 'AlUla, Medina Region',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuC0C3XiNWq5K2GV8UQO74BcRIywVshCSeBWlgAlz-h5VL5E1nLxfmmog9AKwTv_XGCEeKLuWjWWS0uoJe3g1ygbZwUHtd0zm1xw8h9IzAplzTfELTz6SXOhNg8YFoSs8aiXXjchsftYT4HyI6XPLQo0ujzNXbhMDrRJCRMte5ckZOoUX9Gx9dN2X8W6bcGBg8Z66KSDgiHd_0NSVZMz7nnPfMPpODNNONlmmP2AHHFpZuN_or4eQHApgC8i100fmyik7j8ZBPvm6aNV',
-    badge: 'اليونسكو',
-    badgeEn: 'UNESCO World Heritage',
-    regions: ['north'],
-    interests: ['التاريخ', 'الطبيعة'],
-    category: 'heritage',
-  },
-  {
     id: '1',
     title: 'حي الطريف، الدرعية',
     titleEn: 'At-Turaif District, Diriyah',
@@ -58,12 +54,28 @@ const destinations: DestinationItem[] = [
       'Birthplace of the first Saudi state and historic seat of power, offering a unique blend of traditional mud architecture and modern experiences.',
     location: 'الدرعية، الرياض',
     locationEn: 'Diriyah, Riyadh',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBW_-suh3Zy7j5GnF_VxK6Da1qj_F7y8s0vwT48GH58K9X5ujWQiVH_0zWjSW7MgkxRpUFj86LC3aXElj2XOSpC7lgppi_-wfxPhNSHYEYmK8G38qFUBFbkNZOZnkZrZDmBrEszke1m8UGIuFREcrAAFcn8dZgbDG6PIF9vuD13q-9AquT9X7C_iEGYo0IIyJpKEpKoWIB2S_ojCeUtoGxatFHonfNLFzPmx4xgUM8xp4ykw_RS3kslUbwW7on-3IB20-QKTVCptDYR',
+    imageUrl: dareahImage,
     badge: 'تراث وطني',
     badgeEn: 'National Heritage',
     regions: ['central'],
     interests: ['التاريخ', 'العمارة', 'الفنون'],
+    category: 'heritage',
+  },
+  {
+    id: '2',
+    title: 'مدائن صالح (الحجر)',
+    titleEn: 'Hegra (Al-Hijr)',
+    description:
+      'رحلة عبر الزمن إلى قلب الحضارة النبطية، حيث تحكي الصخور المنحوتة قصص ألفي عام من التاريخ في العلا.',
+    descriptionEn:
+      'A journey through time into the heart of the Nabataean civilization, where carved rocks tell stories of two thousand years of history in AlUla.',
+    location: 'العلا، منطقة المدينة المنورة',
+    locationEn: 'AlUla, Medina Region',
+    imageUrl: salehcityImage,
+    badge: 'اليونسكو',
+    badgeEn: 'UNESCO World Heritage',
+    regions: ['north'],
+    interests: ['التاريخ', 'الطبيعة'],
     category: 'heritage',
   },
   {
@@ -76,8 +88,7 @@ const destinations: DestinationItem[] = [
       'An architectural icon in Asir, known for its colorful fortresses and a long history of hospitality and courage in lush green mountains.',
     location: 'رجال ألمع، عسير',
     locationEn: 'Rijal Almaa, Asir Region',
-    imageUrl:
-      'https://images.pexels.com/photos/15212987/pexels-photo-15212987.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: rjalalmaImage,
     badge: 'قرية جبلية',
     badgeEn: 'Mountain Village',
     regions: ['south'],
@@ -94,8 +105,7 @@ const destinations: DestinationItem[] = [
       'Stone alleyways and historic houses with ornate wooden facades telling the story of old Jeddah and the Red Sea spirit.',
     location: 'حي البلد، جدة',
     locationEn: 'Al-Balad, Jeddah',
-    imageUrl:
-      'https://images.pexels.com/photos/15692807/pexels-photo-15692807.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: albaladImage,
     badge: 'تراث حضري',
     badgeEn: 'Urban Heritage',
     regions: ['west'],
@@ -108,11 +118,10 @@ const destinations: DestinationItem[] = [
     titleEn: 'Al-Ahsa Oasis',
     description: 'أكبر واحة نخيل في العالم، تجمع بين العيون الطبيعية والمزارع والبيوت الطينية التاريخية.',
     descriptionEn:
-      'The world’s largest palm oasis, combining natural springs, farms, and historic mud houses.',
+      "The world's largest palm oasis, combining natural springs, farms, and historic mud houses.",
     location: 'واحة الأحساء، المنطقة الشرقية',
     locationEn: 'Al-Ahsa Oasis, Eastern Region',
-    imageUrl:
-      'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: alahsaImage,
     badge: 'واحة تراثية',
     badgeEn: 'Heritage Oasis',
     regions: ['east'],
@@ -129,8 +138,7 @@ const destinations: DestinationItem[] = [
       'The largest open-air museum of human history, featuring carvings dating back thousands of years depicting humans and animals.',
     location: 'جبة والشويمس، حائل',
     locationEn: 'Jubbah & Shuwaymis, Hail',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAZJlEAb_AkfjIwC08wFkegeXyQ75sfNaMDP0znDPdBz5JEdncnh_8fOL3mpAUbPqc4BCNvEh6mqQ4gRyQzIVgvEVHUCDjbIjM-DPbMp6LHea5XYxnYE0DTaMQfxYnJNhVMk_pwNe4AJ75hpKpDy1PL0I1G3nSddRdJxgSkNVGMI37uNVkcSU82m051YvYIb7vY_wpqxGO0BOiHj52-Hx3eHrEc7ywgOSf42ZFWOOLgubcZM5Qog1lPQsUZDCdzVwS3uYf_Uasg9Mus',
+    imageUrl: hailImage,
     badge: 'اليونسكو',
     badgeEn: 'UNESCO World Heritage',
     regions: ['north'],
@@ -147,8 +155,7 @@ const destinations: DestinationItem[] = [
       'Luxury resorts, pristine beaches, and world-class diving experiences on the Red Sea coast.',
     location: 'البحر الأحمر، الساحل الغربي',
     locationEn: 'Red Sea, Western Coast',
-    imageUrl:
-      'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: jazerahredseaImage,
     badge: 'سياحة بحرية',
     badgeEn: 'Marine Tourism',
     regions: ['west'],
@@ -164,8 +171,7 @@ const destinations: DestinationItem[] = [
       'A massive entertainment city southwest of Riyadh featuring world-class rides and modern attractions.',
     location: 'القدية، الرياض',
     locationEn: 'Qiddiya, Riyadh',
-    imageUrl:
-      'https://images.pexels.com/photos/1291504/pexels-photo-1291504.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: sixflagImage,
     badge: 'مدينة ترفيهية',
     badgeEn: 'Entertainment City',
     regions: ['central'],
@@ -181,8 +187,7 @@ const destinations: DestinationItem[] = [
       'An archipelago of pristine islands and coral reefs, a haven for divers and those who love dolphins and bird watching.',
     location: 'منطقة جازان، جنوب غرب المملكة',
     locationEn: 'Jazan Region, Southwest Saudi Arabia',
-    imageUrl:
-      'https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: frasanImage,
     badge: 'محميّة بحرية',
     badgeEn: 'Marine Reserve',
     regions: ['south'],
@@ -198,8 +203,7 @@ const destinations: DestinationItem[] = [
       'A modern seafront promenade with walking tracks, playgrounds, restaurants, and views of the Red Sea.',
     location: 'كورنيش جدة، المنطقة الغربية',
     locationEn: 'Jeddah Corniche, Western Region',
-    imageUrl:
-      'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: jeddahImage,
     badge: 'واجهة بحرية',
     badgeEn: 'Seafront',
     regions: ['west'],
@@ -212,8 +216,7 @@ const destinations: DestinationItem[] = [
     title: 'كبسة نجدية',
     description: 'طبق الأرز الشهير من منطقة نجد، يُطهى مع اللحم أو الدجاج وتوابل عربية عميقة النكهة.',
     location: 'نجد، المنطقة الوسطى',
-    imageUrl:
-      'https://images.pexels.com/photos/14386772/pexels-photo-14386772.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: kabsahImage,
     badge: 'المطبخ السعودي',
     badgeEn: 'Saudi Cuisine',
     regions: ['central'],
@@ -226,8 +229,7 @@ const destinations: DestinationItem[] = [
     title: 'السليق الحجازي',
     description: 'أرز أبيض بحليب مطهو برفق مع الدجاج أو اللحم، من أشهر أطباق المنطقة الغربية.',
     location: 'الحجاز، المنطقة الغربية',
-    imageUrl:
-      'https://images.pexels.com/photos/4958681/pexels-photo-4958681.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: slegImage,
     badge: 'المطبخ السعودي',
     badgeEn: 'Saudi Cuisine',
     regions: ['west'],
@@ -240,8 +242,7 @@ const destinations: DestinationItem[] = [
     title: 'الحنيد العسيري',
     description: 'لحم يُطهى ببطء في حفرة تقليدية تحت الأرض، يقدم مع الأرز في أجواء جبلية مميزة.',
     location: 'عسير، المنطقة الجنوبية',
-    imageUrl:
-      'https://images.pexels.com/photos/7190365/pexels-photo-7190365.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: hanethImage,
     badge: 'المطبخ السعودي',
     badgeEn: 'Saudi Cuisine',
     regions: ['south'],
@@ -254,8 +255,7 @@ const destinations: DestinationItem[] = [
     title: 'سمك الكنعد الشرقي',
     description: 'سمك كنعد متبل ومشوي على الجمر، من ألذ أطباق الساحل الشرقي في المملكة.',
     location: 'المنطقة الشرقية',
-    imageUrl:
-      'https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: fishImage,
     badge: 'المطبخ السعودي',
     badgeEn: 'Saudi Cuisine',
     regions: ['east'],

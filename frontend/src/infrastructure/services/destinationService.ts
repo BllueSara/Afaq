@@ -1,6 +1,10 @@
 import { Destination } from '@/domain/entities/Destination';
 import { Region } from '@/domain/entities/Region';
 import { Language } from '@/domain/entities/Language';
+import dareahImage from '@/assets/dareah.jpeg';
+import ulaImage from '@/assets/ula.jpeg';
+import albaladImage from '@/assets/albalad.jpeg';
+import rjalalmaImage from '@/assets/rjalalma3.jpeg';
 
 // Mock data - في المستقبل سيتم استبدالها بـ API calls
 const destinationsData: Record<string, Destination> = {
@@ -9,10 +13,8 @@ const destinationsData: Record<string, Destination> = {
     title: 'حي الطريف',
     region: Region.NAJD,
     location: 'الدرعية، الرياض',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBloIl_IQ7bYzpEK4RqJX681tNGpcgedo8FIB2oqXdMFhaK2TKZgN0WRSLjs4R9iOgI1QmIVPNqzULe56fie7M1Ylr82RA3SDtF1tuRtmRg7M7QoKpneZzvRHDg6YLju8TwRGhBMdD-HsuX-c3aLLMGx6zC3MbxiQbDN3nB8wyNbJWpxHpZGehIQKS2_H90JQfTd-eFcXNeaSgdyPRkIPymISJr3SYmR5JJmsu4TvAjZOOlDAKrhN_n1FZOIW4HziBGjO5N2kd-7dE7',
-    heroImageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCSCwWXIfDsSzkol-vLqi4nsJHPsBuTwz1Y9jvDZFdFkEr2gd-IlHa7GBr_0Mf-m-gXXfwzPerqDlWYOKcTYUkgqqdQKEOLZyrTRFwSxK26DcjCvZ57pTQq0liBXacFH-RTcW0d0InjwWqFjZsXOayZvN4RTwRtBfoleg7nGKfK7RXpxOFYakqt1Z2trv8XT9oAqw1mmMj_aQhFU75Opmg7Z-2nw7r5GO8cUD4Du-_MVPRHt2Ti2gTEBKnqTe_HEKAOW_lPPgq0XQ',
+    imageUrl: dareahImage,
+    heroImageUrl: dareahImage,
     heroSubtitle: 'مسقط رأس الدولة السعودية الأولى. شاهد عظمة البناء بالطين حيث بدأت قصة وطن، والتي تم ترميمها بدقة ليشهدها العالم.',
     quote: 'إرث محفور في الطين، يهمس بقصص الصمود والوحدة عبر القرون.',
     description:
@@ -98,10 +100,8 @@ const destinationsData: Record<string, Destination> = {
     title: 'مدائن صالح',
     region: Region.HEJAZ,
     location: 'العلا، منطقة المدينة المنورة',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuC0C3XiNWq5K2GV8UQO74BcRIywVshCSeBWlgAlz-h5VL5E1nLxfmmog9AKwTv_XGCEeKLuWjWWS0uoJe3g1ygbZwUHtd0zm1xw8h9IzAplzTfELTz6SXOhNg8YFoSs8aiXXjchsftYT4HyI6XPLQo0ujzNXbhMDrRJCRMte5ckZOoUX9Gx9dN2X8W6bcGBg8Z66KSDgiHd_0NSVZMz7nnPfMPpODNNONlmmP2AHHFpZuN_or4eQHApgC8i100fmyik7j8ZBPvm6aNV',
-    heroImageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuC0C3XiNWq5K2GV8UQO74BcRIywVshCSeBWlgAlz-h5VL5E1nLxfmmog9AKwTv_XGCEeKLuWjWWS0uoJe3g1ygbZwUHtd0zm1xw8h9IzAplzTfELTz6SXOhNg8YFoSs8aiXXjchsftYT4HyI6XPLQo0ujzNXbhMDrRJCRMte5ckZOoUX9Gx9dN2X8W6bcGBg8Z66KSDgiHd_0NSVZMz7nnPfMPpODNNONlmmP2AHHFpZuN_or4eQHApgC8i100fmyik7j8ZBPvm6aNV',
+    imageUrl: ulaImage,
+    heroImageUrl: ulaImage,
     heroSubtitle: 'رحلة عبر الزمن إلى قلب الحضارة النبطية، حيث تحكي الصخور المنحوتة قصص ألفي عام من التاريخ في العلا.',
     quote: 'حيث نحتت الصخور قصص حضارة عظيمة، ووقفت شامخة عبر آلاف السنين.',
     description:
@@ -178,10 +178,8 @@ const destinationsData: Record<string, Destination> = {
     title: 'حي البلد',
     region: Region.HEJAZ,
     location: 'حي البلد، جدة',
-    imageUrl:
-      'https://images.pexels.com/photos/15692807/pexels-photo-15692807.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    heroImageUrl:
-      'https://images.pexels.com/photos/15692815/pexels-photo-15692815.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: albaladImage,
+    heroImageUrl: albaladImage,
     heroSubtitle:
       'قلب جدة التاريخي حيث تختلط رائحة البحر مع مآذن المساجد وواجهات البيوت الخشبية القديمة.',
     quote: 'في أزقة البلد، كل شرفة وكل باب يحكيان فصلاً من حكاية الحجاز.',
@@ -254,10 +252,8 @@ const destinationsData: Record<string, Destination> = {
     title: 'قرية رجال ألمع',
     region: Region.ASIR,
     location: 'رجال ألمع، عسير',
-    imageUrl:
-      'https://images.pexels.com/photos/15212987/pexels-photo-15212987.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    heroImageUrl:
-      'https://images.pexels.com/photos/15212986/pexels-photo-15212986.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageUrl: rjalalmaImage,
+    heroImageUrl: rjalalmaImage,
     heroSubtitle:
       'قرية جبلية تاريخية تتدرج بيوتها الحجرية على سفوح الجبال الخضراء جنوب غرب المملكة.',
     quote: 'في رجال ألمع، الجدران الملوّنة تحكي قصص الجبال والضباب والضيافة الجنوبية.',

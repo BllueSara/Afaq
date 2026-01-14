@@ -6,10 +6,10 @@ import { translations } from '@/shared/constants/translations';
 export const DestinationMapper = {
   toLocalized: (destination: Destination, language: Language): Destination => {
     const destinationMap: Record<string, keyof typeof translations[Language.AR]['destinations']> = {
-      '1': 'alBalad',
-      '2': 'alHijr',
-      '3': 'rijalAlma',
-      '4': 'alTuraif',
+      '1': 'alTuraif', // حي الطريف
+      '2': 'alHijr', // مدائن صالح (الحجر)
+      '3': 'alBalad', // حي البلد
+      'rijal-alma': 'rijalAlma', // قرية رجال ألمع
     };
 
     const destKey = destinationMap[destination.id];
