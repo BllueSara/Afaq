@@ -10,14 +10,19 @@ export default {
       colors: {
         "primary": "#2D5A27",
         "primary-dark": "#1e3c1a",
+        "saudi-green": "#2D5A27",
         "secondary": "#8a8060",
         "accent": "#dca510",
         "accent-gold": "#C5A059",
+        "accent-sand": "#e6e3db",
         "background-beige": "#F5F5DC",
-        "background-light": "#F5F5DC",
-        "background-dark": "#161d15",
+        "background-light": "#f8f8f5",
+        "background-dark": "#221e10",
         "surface": "#ffffff",
-        "text-main": "#181611"
+        "text-main": "#181611",
+        "text-dark": "#181611",
+        "text-light": "#f5f3f0",
+        "muted": "#8a8060"
       },
       fontFamily: {
         "arabic": ["Readex Pro", "sans-serif"],

@@ -15,9 +15,9 @@ const heroImageUrl =
 const baseDestinations: Destination[] = [
   {
     id: '1',
-    title: '',
-    region: Region.HEJAZ,
-    location: '',
+    title: 'حي الطريف',
+    region: Region.NAJD,
+    location: 'الدرعية، الرياض',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBloIl_IQ7bYzpEK4RqJX681tNGpcgedo8FIB2oqXdMFhaK2TKZgN0WRSLjs4R9iOgI1QmIVPNqzULe56fie7M1Ylr82RA3SDtF1tuRtmRg7M7QoKpneZzvRHDg6YLju8TwRGhBMdD-HsuX-c3aLLMGx6zC3MbxiQbDN3nB8wyNbJWpxHpZGehIQKS2_H90JQfTd-eFcXNeaSgdyPRkIPymISJr3SYmR5JJmsu4TvAjZOOlDAKrhN_n1FZOIW4HziBGjO5N2kd-7dE7',
   },
@@ -61,8 +61,18 @@ export const HomePage = () => {
   );
 
   const handleSearch = (filters: SearchFilters) => {
-    console.log('Search filters:', filters);
-    // TODO: Implement search logic
+    const params = new URLSearchParams();
+
+    if (filters.region) {
+      params.set('region', filters.region);
+    }
+
+    if (filters.experienceType) {
+      params.set('experienceType', filters.experienceType);
+    }
+
+    const query = params.toString();
+    navigate(query ? `/regions?${query}` : '/regions');
   };
 
   const handleViewAllDestinations = () => {

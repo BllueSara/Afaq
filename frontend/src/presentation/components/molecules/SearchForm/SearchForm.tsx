@@ -4,6 +4,7 @@ import { Button } from '@/presentation/components/atoms/Button';
 import { Icon } from '@/presentation/components/atoms/Icon';
 import { Region } from '@/domain/entities/Region';
 import { ExperienceType } from '@/domain/entities/ExperienceType';
+import { Language } from '@/domain/entities/Language';
 import { SearchFilters } from '@/domain/interfaces/SearchFilters';
 import { useLanguage } from '@/application/hooks/useLanguage';
 import { useTranslation } from '@/application/hooks/useTranslation';
@@ -36,10 +37,22 @@ export const SearchForm = ({ onSubmit }: SearchFormProps) => {
 
   const experienceOptions = [
     { value: '', label: t.search.selectExperience },
-    { value: ExperienceType.HISTORICAL_SITES, label: t.experienceTypes.historicalSites },
-    { value: ExperienceType.CULINARY_ARTS, label: t.experienceTypes.culinaryArts },
-    { value: ExperienceType.TRADITIONAL_CRAFTS, label: t.experienceTypes.traditionalCrafts },
-    { value: ExperienceType.LOCAL_FESTIVALS, label: t.experienceTypes.localFestivals },
+    {
+      value: ExperienceType.HISTORICAL_SITES,
+      label: language === Language.AR ? 'التاريخ' : t.experienceTypes.historicalSites,
+    },
+    {
+      value: ExperienceType.TRADITIONAL_CRAFTS,
+      label: language === Language.AR ? 'العمارة' : t.experienceTypes.traditionalCrafts,
+    },
+    {
+      value: ExperienceType.LOCAL_FESTIVALS,
+      label: language === Language.AR ? 'الفنون' : t.experienceTypes.localFestivals,
+    },
+    {
+      value: ExperienceType.CULINARY_ARTS,
+      label: language === Language.AR ? 'الطهي' : t.experienceTypes.culinaryArts,
+    },
   ];
 
   return (

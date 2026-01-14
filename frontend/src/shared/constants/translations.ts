@@ -138,6 +138,18 @@ export const translations = {
         },
       },
     },
+    regionsPage: {
+      tabs: {
+        heritage: 'المواقع الأثرية والتراثية',
+        modern: 'السياحة والترفيه الحديث',
+      },
+    },
+    practicalInfo: {
+      title: 'معلومات عملية',
+      workingHours: 'ساعات العمل',
+      mapSubtitle: 'وادي حنيفة، الرياض',
+      getDirections: 'احصل على الاتجاهات',
+    },
   },
   [Language.EN]: {
     nav: {
@@ -275,6 +287,18 @@ export const translations = {
           type: 'Family',
         },
       },
+    },
+    regionsPage: {
+      tabs: {
+        heritage: 'Heritage Sites',
+        modern: 'Modern Tourism & Entertainment',
+      },
+    },
+    practicalInfo: {
+      title: 'Practical Information',
+      workingHours: 'Opening Hours',
+      mapSubtitle: 'Wadi Hanifa, Riyadh',
+      getDirections: 'Get directions',
     },
   },
 };

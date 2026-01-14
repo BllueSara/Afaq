@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Destination } from '@/domain/entities/Destination';
 import { Icon } from '@/presentation/components/atoms/Icon';
 import { useLanguage } from '@/application/hooks/useLanguage';
@@ -9,13 +10,22 @@ interface DestinationCardProps {
 }
 
 export const DestinationCard = ({ destination, onClick }: DestinationCardProps) => {
+  const navigate = useNavigate();
   const { language, isRTL } = useLanguage();
   const regionLabel = RegionMapper.toLocalized(destination.region, language);
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      navigate(`/destination/${destination.id}`);
+    }
+  };
 
   return (
     <div
       className="group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transition-all hover:-translate-y-2 cursor-pointer"
-      onClick={onClick}
+      onClick={handleClick}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
       <img
