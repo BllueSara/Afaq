@@ -71,11 +71,13 @@ export const StoryExperiences = () => {
                     size="sm"
                   />
                   <span>
-                    {index === 0
+                    {index === 0 && 'date' in workshop
                       ? workshop.date
-                      : index === 1
+                      : index === 1 && 'duration' in workshop
                         ? workshop.duration
-                        : workshop.type}
+                        : 'type' in workshop
+                          ? workshop.type
+                          : ''}
                   </span>
                 </div>
               </div>

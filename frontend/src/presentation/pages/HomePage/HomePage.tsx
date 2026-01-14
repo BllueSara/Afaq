@@ -16,7 +16,7 @@ import rjalalmaImage from '@/assets/rjalalma3.jpeg';
 const heroImageUrl =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuCsW_khh3ISZK_5EJOiWXasOLPE9NQ1r5DiXwV6IPOi-G3NUIL-WeDfNFOoODJLew91BkZAepCS9vTmX2BzOuo56Sra3njpWVQ81cqR_FUvgoHN_JvomsCmin2ljQyYfso6jM2a53l6-9AffJNk06jOR96krRdHAi0nBXZfiyzXI3i8hsUDpuJmk6o9Mqz1bybMYG5XSKWd0xD7iAZrRUP5g36J98UJZYx_g-tbBjOuveuZRpyptArxl1Bo18D3APM_ccfeGuh74bdP';
 
-const baseDestinations: Destination[] = [
+const baseDestinations: Partial<Destination>[] = [
   {
     id: '1',
     title: 'حي الطريف',
@@ -56,7 +56,7 @@ export const HomePage = () => {
   const t = useTranslation(language);
 
   const destinations = useMemo(
-    () => baseDestinations.map((dest) => DestinationMapper.toLocalized(dest, language)),
+    () => baseDestinations.map((dest) => DestinationMapper.toLocalized(dest, language)) as Partial<Destination>[],
     [language]
   );
 
@@ -137,7 +137,7 @@ export const HomePage = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {destinations.map((destination) => (
-                <DestinationCard key={destination.id} destination={destination} />
+                <DestinationCard key={destination.id} destination={destination as Destination} />
               ))}
             </div>
           </div>

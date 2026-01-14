@@ -99,7 +99,6 @@ export const PlannerPage = () => {
                 <LocationSection
                     selectedCity={state.city}
                     onChange={handleCityChange}
-                    hasError={errors.city}
                 />
 
                 <DurationSection

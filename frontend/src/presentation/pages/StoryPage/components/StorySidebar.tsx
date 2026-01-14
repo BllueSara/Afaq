@@ -6,7 +6,7 @@ const guardianImageUrl =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuB_aSYRg5ZLDLhf-s847dITtqVsblfuZM6S-evkeXhCdqUMyT3X2Yflb3z4J9qTvR0m3J7FeB6zXmWK0KGiFLsr4fLuFNxNNVS_OFGFLOGLXmjinKqDwrcrspEMH0Wn2x4AoXqemzDuGu-dV2j5vK22o0VFmkwiiYhBeJ0IdI83vWqimpwvtHcV9bYVNewDsp0iqBLIe022CSN0GCfu1oB_DDqjCpLk5VOqIFqD1qvx5CnLNOBU4xejM_QgMR_3z7j9rUa8WYwvYw';
 
 export const StorySidebar = () => {
-  const { language, isRTL } = useLanguage();
+  const { language } = useLanguage();
   const t = useTranslation(language);
 
   return (

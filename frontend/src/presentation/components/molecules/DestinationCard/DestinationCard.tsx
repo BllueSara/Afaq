@@ -5,14 +5,14 @@ import { useLanguage } from '@/application/hooks/useLanguage';
 import { RegionMapper } from '@/infrastructure/mappers/RegionMapper';
 
 interface DestinationCardProps {
-  destination: Destination;
+  destination: Destination | Partial<Destination>;
   onClick?: () => void;
 }
 
 export const DestinationCard = ({ destination, onClick }: DestinationCardProps) => {
   const navigate = useNavigate();
   const { language, isRTL } = useLanguage();
-  const regionLabel = RegionMapper.toLocalized(destination.region, language);
+  const regionLabel = destination.region ? RegionMapper.toLocalized(destination.region, language) : '';
 
   const handleClick = () => {
     if (onClick) {

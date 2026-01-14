@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 export const StoryHeader = () => {
-  const { language, isRTL } = useLanguage();
+  const { language } = useLanguage();
   const t = useTranslation(language);
 
   return (

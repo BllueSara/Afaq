@@ -12,7 +12,7 @@ interface FiltersSidebarProps {
 }
 
 export const FiltersSidebar = ({ filters, onChange }: FiltersSidebarProps) => {
-  const { language, isRTL } = useLanguage();
+  const { language } = useLanguage();
 
   const toggleRegion = (key: string) => {
     const exists = filters.regions.includes(key);

@@ -1,4 +1,3 @@
-import { Logo } from '@/presentation/components/atoms/Logo';
 import { Button } from '@/presentation/components/atoms/Button';
 import { Input } from '@/presentation/components/atoms/Input';
 import { Icon } from '@/presentation/components/atoms/Icon';
