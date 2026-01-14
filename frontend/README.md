@@ -42,6 +42,34 @@ npm run build
 npm run preview
 ```
 
+## النشر على Netlify
+
+تم إعداد المشروع للنشر على Netlify. يمكنك النشر بعدة طرق:
+
+### الطريقة الأولى: عبر Netlify CLI
+```bash
+# تثبيت Netlify CLI
+npm install -g netlify-cli
+
+# تسجيل الدخول
+netlify login
+
+# النشر
+netlify deploy --prod
+```
+
+### الطريقة الثانية: عبر GitHub
+1. ارفع المشروع على GitHub
+2. اذهب إلى [Netlify](https://www.netlify.com)
+3. اضغط على "Add new site" > "Import an existing project"
+4. اختر GitHub واختر المستودع
+5. Netlify سيكتشف الإعدادات تلقائياً من ملف `netlify.toml`
+
+### الطريقة الثالثة: السحب والإفلات
+1. قم ببناء المشروع: `npm run build`
+2. اذهب إلى [Netlify](https://www.netlify.com)
+3. اسحب مجلد `dist` إلى Netlify
+
 ## التقنيات المستخدمة
 
 - React 18
