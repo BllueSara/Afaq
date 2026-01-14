@@ -23,17 +23,17 @@ const baseDestinations: Destination[] = [
   },
   {
     id: '2',
-    title: '',
-    region: Region.NORTH,
-    location: '',
+    title: 'مدائن صالح (الحجر)',
+    region: Region.HEJAZ,
+    location: 'العلا، منطقة المدينة المنورة',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAKfpiNK8G8H7eCJPkbiZgnFCoSLqVP8RWeOox1DSA6s0PagUz4LDuy_oNUT6AZACSKtrNH-EFVlDSO7N-qV2xEat1egytlmoOgtREWyPzEyqJQgu6g6REFv61vmX-_swvrQ7MXyQPXmULj7TQQN47j8eNCei4cH_eaTg5kaKt5BKoGEZchFjvR7WbA-eQTSOFYQIqy2eX6G2uwkmE6pEX9m2axPaRoS_juoJjURzV-bLWRGpDJURndCIGmwd1LMzCYfzlb_VIFem5T',
   },
   {
     id: '3',
-    title: '',
-    region: Region.ASIR,
-    location: '',
+    title: 'حي البلد',
+    region: Region.HEJAZ,
+    location: 'حي البلد، جدة',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAdol0C8CK5CfTx74mm_QxsBimozKlBVAHpEkx0l1be5jG4Flr7YHvBqhoWjuQrTm3OvpTUthEiadAGtn24AXMDZZ-Nx9SifXb8KVUfWBDR-RxBogmREFn1awJZjL4O3l3oM1HWu8whC1u8bCGOQnp8aW6nVuJH85bqU5GHRd9C1cCd8DeVmvg7te0w964D8AWFSxSRqhuQ2HopJpT7vfFfh3acvqAU1ojZu3CT4JSwWr2-n1rLtwD1yHx1ozp_BqYjP-QazMXWw6D7',
   },

@@ -67,20 +67,55 @@ const destinations: DestinationItem[] = [
     category: 'heritage',
   },
   {
-    id: '3',
+    id: 'rijal-alma',
     title: 'قرية رجال ألمع',
-    titleEn: "Rijal Almaa Village",
+    titleEn: 'Rijal Almaa Village',
     description:
       'أيقونة معمارية في عسير، تتميز بقلاعها الملونة وتاريخ حافل بالكرم والشجاعة في الجبال الخضراء.',
     descriptionEn:
       'An architectural icon in Asir, known for its colorful fortresses and a long history of hospitality and courage in lush green mountains.',
-    location: 'عسير، المنطقة الجنوبية',
-    locationEn: 'Asir, Southern Region',
+    location: 'رجال ألمع، عسير',
+    locationEn: 'Rijal Almaa, Asir Region',
     imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCSQQRuQwzHr4kgo5OBlm_mNrxROeRD-7FYClxsjtY_i8-c1kiTjNI_1hAGoeRNGiIw-YAh67OfC-ugv0RriyudrL5AzWV4dg36TQoiKk9sfcrGTD4UJn_ed8f3PVXF54rZG75GP_4wq66vGxJAj7a56E6Xnkc5ct5TKIdh2arDTR6Bbk5-3fdI_gi66rcKbozcF63RI5OLuVBKF5qz-_ZSNFY672G8Y5-dLrqsUBQ-nIb87pbd5F7vfUF7MRa1BjyPN9S2r_Kjit8a',
-    badge: 'ثقافة',
-    badgeEn: 'Culture',
+      'https://images.pexels.com/photos/15212987/pexels-photo-15212987.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    badge: 'قرية جبلية',
+    badgeEn: 'Mountain Village',
     regions: ['south'],
+    interests: ['التاريخ', 'الطبيعة', 'الفنون'],
+    category: 'heritage',
+  },
+  {
+    id: '3',
+    title: 'حي البلد التاريخي',
+    titleEn: 'Al-Balad Historic District',
+    description:
+      'أزقة حجرية وبيوت تاريخية بواجهات خشبية مزخرفة تحكي قصة جدة القديمة وروح البحر الأحمر.',
+    descriptionEn:
+      'Stone alleyways and historic houses with ornate wooden facades telling the story of old Jeddah and the Red Sea spirit.',
+    location: 'حي البلد، جدة',
+    locationEn: 'Al-Balad, Jeddah',
+    imageUrl:
+      'https://images.pexels.com/photos/15692807/pexels-photo-15692807.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    badge: 'تراث حضري',
+    badgeEn: 'Urban Heritage',
+    regions: ['west'],
+    interests: ['التاريخ', 'العمارة', 'الفنون'],
+    category: 'heritage',
+  },
+  {
+    id: 'al-ahsa-oasis',
+    title: 'واحة الأحساء',
+    titleEn: 'Al-Ahsa Oasis',
+    description: 'أكبر واحة نخيل في العالم، تجمع بين العيون الطبيعية والمزارع والبيوت الطينية التاريخية.',
+    descriptionEn:
+      'The world’s largest palm oasis, combining natural springs, farms, and historic mud houses.',
+    location: 'واحة الأحساء، المنطقة الشرقية',
+    locationEn: 'Al-Ahsa Oasis, Eastern Region',
+    imageUrl:
+      'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    badge: 'واحة تراثية',
+    badgeEn: 'Heritage Oasis',
+    regions: ['east'],
     interests: ['التاريخ', 'الطبيعة'],
     category: 'heritage',
   },

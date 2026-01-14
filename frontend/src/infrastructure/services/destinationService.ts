@@ -173,6 +173,197 @@ const destinationsData: Record<string, Destination> = {
       'https://lh3.googleusercontent.com/aida-public/AB6AXuC0C3XiNWq5K2GV8UQO74BcRIywVshCSeBWlgAlz-h5VL5E1nLxfmmog9AKwTv_XGCEeKLuWjWWS0uoJe3g1ygbZwUHtd0zm1xw8h9IzAplzTfELTz6SXOhNg8YFoSs8aiXXjchsftYT4HyI6XPLQo0ujzNXbhMDrRJCRMte5ckZOoUX9Gx9dN2X8W6bcGBg8Z66KSDgiHd_0NSVZMz7nnPfMPpODNNONlmmP2AHHFpZuN_or4eQHApgC8i100fmyik7j8ZBPvm6aNV',
     mapLocation: 'مدائن صالح، العلا',
   },
+  '3': {
+    id: '3',
+    title: 'حي البلد',
+    region: Region.HEJAZ,
+    location: 'حي البلد، جدة',
+    imageUrl:
+      'https://images.pexels.com/photos/15692807/pexels-photo-15692807.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroImageUrl:
+      'https://images.pexels.com/photos/15692815/pexels-photo-15692815.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroSubtitle:
+      'قلب جدة التاريخي حيث تختلط رائحة البحر مع مآذن المساجد وواجهات البيوت الخشبية القديمة.',
+    quote: 'في أزقة البلد، كل شرفة وكل باب يحكيان فصلاً من حكاية الحجاز.',
+    description:
+      'حي البلد التاريخي في جدة هو بوابة الحجاز البحرية القديمة، بمنازله العتيقة ذات الرواشين الخشبية الملونة وأسواقه الشعبية التي ازدحمت لعقود بالحجاج والتجار من كل أنحاء العالم. بين أزقته الضيقة ومساجده التاريخية، ما زال الحي ينبض بروح البحر الأحمر وثقافة جدة الأصيلة.',
+    timeline: [
+      {
+        year: 'القرن 7 م',
+        title: 'بوابة الحجاز البحرية',
+        description: 'جدة تتحول إلى ميناء رئيسي لاستقبال حجاج البحر القادمين إلى مكة المكرمة.',
+        imageUrl:
+          'https://images.pexels.com/photos/15692814/pexels-photo-15692814.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+      {
+        year: '1900',
+        title: 'ازدهار البيوت التاريخية',
+        description: 'تشييد البيوت المزخرفة بالرواشين الخشبية التي أصبحت أيقونة معمارية للحجاز.',
+        imageUrl:
+          'https://images.pexels.com/photos/15692806/pexels-photo-15692806.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+      {
+        year: '2014',
+        title: 'تراث عالمي',
+        description: 'تسجيل جدة التاريخية (البلد) في قائمة التراث العالمي لليونسكو.',
+        imageUrl:
+          'https://images.pexels.com/photos/15692813/pexels-photo-15692813.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+    ],
+    nearbyPlaces: [
+      {
+        id: '1',
+        name: 'سوق العلوي',
+        type: 'attraction',
+        distance: '0.2 كم',
+        description: 'أحد أقدم الأسواق الشعبية في جدة، يعرض البضائع التقليدية والهدايا.',
+        imageUrl:
+          'https://images.pexels.com/photos/3738836/pexels-photo-3738836.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        rating: 4.6,
+        reviewCount: 320,
+      },
+      {
+        id: '2',
+        name: 'مسجد الشافعي',
+        type: 'attraction',
+        distance: '0.3 كم',
+        description: 'من أقدم مساجد جدة بني على الطراز الحجازي التقليدي.',
+        imageUrl:
+          'https://images.pexels.com/photos/3738834/pexels-photo-3738834.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        rating: 4.8,
+        reviewCount: 210,
+      },
+    ],
+    workingHours: [
+      { day: 'الأحد - الخميس', hours: '9:00 صباحاً - 11:00 مساءً' },
+      { day: 'الجمعة', hours: '4:00 مساءً - 11:00 مساءً' },
+      { day: 'السبت', hours: '9:00 صباحاً - 11:00 مساءً', isHighlighted: true },
+    ],
+    tickets: [
+      {
+        type: 'دخول المنطقة',
+        price: 'مجاناً',
+        note: '*قد تُطبق رسوم على بعض المتاحف والجولات الخاصة',
+      },
+    ],
+    mapImageUrl: 'https://images.pexels.com/photos/15692809/pexels-photo-15692809.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    mapLocation: 'حي البلد، جدة',
+  },
+  'rijal-alma': {
+    id: 'rijal-alma',
+    title: 'قرية رجال ألمع',
+    region: Region.ASIR,
+    location: 'رجال ألمع، عسير',
+    imageUrl:
+      'https://images.pexels.com/photos/15212987/pexels-photo-15212987.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroImageUrl:
+      'https://images.pexels.com/photos/15212986/pexels-photo-15212986.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroSubtitle:
+      'قرية جبلية تاريخية تتدرج بيوتها الحجرية على سفوح الجبال الخضراء جنوب غرب المملكة.',
+    quote: 'في رجال ألمع، الجدران الملوّنة تحكي قصص الجبال والضباب والضيافة الجنوبية.',
+    description:
+      'تقع قرية رجال ألمع في قلب جبال السروات، وتُعد واحدة من أجمل القرى التراثية في المملكة. تمتاز ببيوتها الحجرية متعددة الطوابق المزينة بالنقوش البيضاء، وبموقعها الذي كان نقطة تجارية مهمة بين تهامة وعسير. اليوم، تحولت القرية إلى متحف مفتوح يعكس تراث المنطقة المعماري والثقافي.',
+    timeline: [
+      {
+        year: 'القرن 10 م',
+        title: 'مركز تجاري جبلي',
+        description: 'تحولت القرية إلى محطة رئيسية على طرق التجارة بين اليمن والحجاز.',
+        imageUrl:
+          'https://images.pexels.com/photos/15212982/pexels-photo-15212982.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+      {
+        year: '1400 هـ',
+        title: 'إحياء التراث',
+        description: 'انطلاق مبادرات لترميم البيوت التاريخية وتحويلها إلى متاحف ومعارض تراثية.',
+        imageUrl:
+          'https://images.pexels.com/photos/15212985/pexels-photo-15212985.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+    ],
+    nearbyPlaces: [
+      {
+        id: '1',
+        name: 'متحف رجال ألمع',
+        type: 'museum',
+        distance: 'داخل القرية',
+        description: 'متحف يوثّق تاريخ القرية والأزياء والأسلحة والمقتنيات التراثية.',
+        imageUrl:
+          'https://images.pexels.com/photos/15212988/pexels-photo-15212988.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        rating: 4.7,
+        reviewCount: 180,
+      },
+    ],
+    workingHours: [
+      { day: 'الأحد - الأربعاء', hours: '9:00 صباحاً - 6:00 مساءً' },
+      { day: 'الخميس - السبت', hours: '9:00 صباحاً - 8:00 مساءً', isHighlighted: true },
+    ],
+    tickets: [
+      {
+        type: 'دخول عام',
+        price: '30 ر.س',
+        note: '*مجاناً للأطفال دون 10 أعوام',
+      },
+    ],
+    mapImageUrl:
+      'https://images.pexels.com/photos/15212981/pexels-photo-15212981.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    mapLocation: 'قرية رجال ألمع، عسير',
+  },
+  'al-ahsa-oasis': {
+    id: 'al-ahsa-oasis',
+    title: 'واحة الأحساء',
+    region: Region.EASTERN,
+    location: 'واحة الأحساء، المنطقة الشرقية',
+    imageUrl:
+      'https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroImageUrl:
+      'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    heroSubtitle:
+      'واحة نخيل مترامية الأطراف وعيون ماء طبيعية تشكل واحدة من أقدم التجمعات الزراعية في العالم.',
+    quote: 'في ظلال نخيل الأحساء تنسج حكايات الماء والصحراء والتجارة القديمة.',
+    description:
+      'تُعد واحة الأحساء أكبر واحة نخيل على وجه الأرض وواحدة من أهم مواقع التراث العالمي في المملكة. تمتاز بمئات الآلاف من أشجار النخيل، والعيون الطبيعية، والأسواق الشعبية، والبيوت الطينية التاريخية التي تعكس عمق التراث في المنطقة الشرقية.',
+    timeline: [
+      {
+        year: 'الألفية الأولى قبل الميلاد',
+        title: 'مفترق طرق حضارية',
+        description: 'الأحساء موقع استراتيجي على طرق التجارة القديمة بين الشرق والغرب.',
+        imageUrl:
+          'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+      {
+        year: '2018',
+        title: 'تراث عالمي',
+        description: 'تسجيل واحة الأحساء في قائمة التراث العالمي لليونسكو.',
+        imageUrl:
+          'https://images.pexels.com/photos/1301855/pexels-photo-1301855.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      },
+    ],
+    nearbyPlaces: [
+      {
+        id: '1',
+        name: 'سوق القيصرية',
+        type: 'attraction',
+        distance: '2 كم',
+        description: 'سوق تاريخي مغطى يعد من أقدم الأسواق في الخليج العربي.',
+        imageUrl:
+          'https://images.pexels.com/photos/3738836/pexels-photo-3738836.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        rating: 4.6,
+        reviewCount: 260,
+      },
+    ],
+    workingHours: [
+      { day: 'الأحد - الخميس', hours: '8:00 صباحاً - 6:00 مساءً' },
+      { day: 'الجمعة - السبت', hours: '9:00 صباحاً - 7:00 مساءً', isHighlighted: true },
+    ],
+    tickets: [
+      {
+        type: 'دخول المواقع العامة',
+        price: 'مجاناً',
+      },
+    ],
+    mapImageUrl:
+      'https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    mapLocation: 'واحة الأحساء، المنطقة الشرقية',
+  },
   
   // يمكن إضافة أماكن أخرى هنا
 };
